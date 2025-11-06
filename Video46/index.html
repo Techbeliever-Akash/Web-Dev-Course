@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations </title>
+    <style>
+        .container{
+            background-color: rgb(45, 88, 88);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box{
+            /* background-color: aqua; */
+            height: 45px;
+            width: 34px;
+            /* animation: AkashAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: AkashAnimation 2s ease-in-out 3s 1 ,
+                         Akash2 3s ease-in-out 3s 1;
+        }
+
+        @keyframes AkashAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+
+        @keyframes Akash2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

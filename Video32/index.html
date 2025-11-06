@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: gray;
+            padding: 45px;
+        }
+
+        .card {
+            background-color: white;
+            width: 344px;
+            height: 444px;
+            border-radius: 7px;
+
+        }
+
+        .image {
+            padding: 7px;
+        }
+
+        .image img {
+            border-radius: 7px;
+
+        }
+
+        .content {
+            padding: 27px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .content p {
+            font-size: 15px;
+            color: gray;
+        }
+
+        .capsules {
+            padding: 2px 24px;
+        }
+
+        .capsules span {
+            padding: 0px 6px;
+            border: 1px solid gray;
+            border-radius: 7px;
+            font-size: 10px;
+           font-family: "Poppins", sans-serif;
+        }
+
+        .button{
+            text-align: center;
+            padding: 45px;
+        }
+
+        .button button{
+            padding: 6px 10px;
+            border-radius: 10px;
+            /* border: 1px solid gray; */
+            border: none;
+            background-color: rgb(221, 244, 255);
+            color: rgb(49, 131, 255);
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            margin-top: -10px;
+            font-weight: bold;
+        }
+
+        .button button:hover{
+            background-color: rgb(121, 201, 238);
+            color: rgb(49, 131, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img width="330px" src="card.png" alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Horse</span>
+        </div>
+        <div class="content">
+            <h2>Akash</h2>
+            <p>Riding my horse in Red Dead</p>
+        </div>
+
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+    <!-- <div class="card">
+
+        <div class="image">
+            <img width="330px" src="card.png" alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Horse</span>
+        </div>
+        <div class="content">
+            <h2>Akash</h2>
+            <p>Riding my horse in Red Dead</p>
+        </div>
+
+        <div class="button">
+            <button>Read More</button>
+        </div>
+
+    </div>
+    for duplication -->
+</body>
+
+</html>
